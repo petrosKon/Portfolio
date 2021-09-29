@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Acomplishments",
     "\\src\\components\\BackgrooundAnimation",
     "\\src\\components\\Footer",
     "\\src\\components\\Header",
     "\\src\\components\\Technologies",
     "\\src\\constants",
+    "\\src\\layout",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\public\\images\\VR Engine\\VR Engine - Project Image.PNG",
+  "SelectedNode": "\\src\\pages\\VRMechanic.js",
   "PreviewInSolutionExplorer": false
 }
