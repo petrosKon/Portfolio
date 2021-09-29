@@ -61,19 +61,26 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<code>
-				public Enum Status [
-					<br />
-					Disconnectable,
-					<br />
-					Connectable,
-					<br />
-					Grabbable,
-					<br />
-					Ungrabbable	
-					<br />
-				]	
-			</code>
+			<div
+				style={{
+				  display: "flex",
+				  justifyContent: "center",
+				}}
+			  >
+				<code>
+					public Enum Status [
+						<br />
+						Disconnectable,
+						<br />
+						Connectable,
+						<br />
+						Grabbable,
+						<br />
+						Ungrabbable	
+						<br />
+					]	
+				</code>
+			</div>
 			<br />
 			<br />
 			<a>
