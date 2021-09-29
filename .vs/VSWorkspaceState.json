@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
+    "\\public\\images",
+    "\\public\\images\\SocialVR",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\BackgrooundAnimation",
-    "\\src\\components\\Footer",
-    "\\src\\components\\Header",
     "\\src\\components\\Technologies",
     "\\src\\constants",
     "\\src\\layout",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\VRMechanic.js",
+  "SelectedNode": "\\public\\images\\SocialVR\\SocialVR - 3 - Two giants classing.png",
   "PreviewInSolutionExplorer": false
 }

@@ -1,6 +1,4 @@
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
 import { Layout } from '../layout/Layout';
-import CenterImage from '../components/Projects/ProjectsStyles';
 
 
 const VRMechanic =()=>{

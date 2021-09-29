@@ -13,8 +13,8 @@ export const projects = [
     description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
     image: '/images/SocialVR - Project Image.jpg',
     tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    source: '/SocialVR',
+    visit: 'https://www.youtube.com/watch?v=JUO25-ABRb8&list=PLDZktaCsdtVd3d242j5bLonuyc_trXKvBru',
     id: 1,
   },
   {
