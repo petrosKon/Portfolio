@@ -1,4 +1,5 @@
 import { Layout } from '../layout/Layout';
+import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
 
 
 const VRMechanic =()=>{
@@ -20,6 +21,8 @@ const VRMechanic =()=>{
 			  >
 				<img src="/images/VR Engine/VR Engine - Project Image.png" alt = "Unity Scene"/>
 			</div>
+			<br />
+			<SectionDivider/>
 			<h1>Implementation</h1>
 			<a>As I said in this scenario we need to train our user into the assembly and the disassembly of the engine. In order to create something like that we use something called a "Snap Zone". This "Snap Zone" functions 
 				as an area that indicates where a certain part fit or not. In order to integrate that to our application we used the **VRTK** plugin since it comes with many predefined objects especially concerning VR.
@@ -143,7 +146,7 @@ const VRMechanic =()=>{
 				  justifyContent: "center",
 				}}
 			  >
-			  <img src="/images/VR Engine/VR Engine - Red Tubes Screws.jpg" alt = "Red Tubes Numbered"/>
+			  <img src="/images/VR Engine/VR Engine - Red Tubes Screws.jpg" alt = "Red Tubes Screws"/>
 			  </div>
 			  <br />
 			  <br />
@@ -153,6 +156,9 @@ const VRMechanic =()=>{
 			  </a>
 			  <br />
 			  <br />
+			  <br />
+			  <SectionDivider/>
+			  <h1>Videos</h1>
 			  <div
 				style={{
 				  display: "flex",

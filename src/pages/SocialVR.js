@@ -1,10 +1,11 @@
 import { Layout } from '../layout/Layout';
+import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
 
 const SocialVR =()=>{
 	return(
 		<Layout>
 			<div>
-				<h1>Motivation</h1>
+				<SectionTitle>Motivation</SectionTitle>
 				<a>
 					This project started by thinking about the value of sharing
 					an experience. One can capture a proof of a spatial existence or a temporal state or a way to express their social
@@ -26,6 +27,9 @@ const SocialVR =()=>{
 					and is living new experiences that are comparable to travelling and sightseeing and are at their core sharable to
 					everyone (VR-accustomed or not). This project was created with another two developer in context of creating something new in VR in order to contribute to a paper.
 				</a>
+				<br />
+				<br />
+			    <SectionDivider />
 				<h1>Describing the player and the scene</h1>
 				<a>
 					First of all, I am not using the regular OVRCameraRig
@@ -76,7 +80,7 @@ const SocialVR =()=>{
 				  justifyContent: "center",
 				}}
 				  >
-					<img src="/images/SocialVR/SocialVR - 2 - Wizard casting spell.png" alt = "In game and camera feed"/>
+					<img src="/images/SocialVR/SocialVR - 2 - Wizard casting spell.png" alt = "Wizard casting spell"/>
 				</div>
 				<br />
 				<br />
@@ -95,7 +99,7 @@ const SocialVR =()=>{
 				  justifyContent: "center",
 				}}
 				  >
-					<img src="/images/SocialVR/SocialVR - 3 - Two giants classing.png" alt = "In game and camera feed"/>
+					<img src="/images/SocialVR/SocialVR - 3 - Two giants classing.png" alt = "Two giants classing"/>
 				</div>
 				<br />
 				<br />
@@ -104,6 +108,9 @@ const SocialVR =()=>{
 					rigged models and they carry an animator component.
 					The main idea of the project is to merge two given selfies.
 				</a>
+				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Merging Feature</h1>
 				<a>
 					One taken in the game and one taken in real life. As for the
@@ -113,6 +120,9 @@ const SocialVR =()=>{
 					second one: The background of the game with the actual
 					physical body of the player.
 				</a>
+				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Method Used</h1>
 				<a>
 					I looked for ways to extract the user in real life and
@@ -132,6 +142,9 @@ const SocialVR =()=>{
 					and possible enhancements. I will also explain some key
 					notions along the breakdown of the algorithm.
 				</a>
+				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Calibration of the camera</h1>
 				<a>
 					Since the final images depend on real life images and on
@@ -155,10 +168,12 @@ const SocialVR =()=>{
 					  justifyContent: "center",
 					}}
 					  >
-					<img src="/images/SocialVR/SocialVR - 5 - Camera mount.png" alt = "In game and camera feed"/>
+					<img src="/images/SocialVR/SocialVR - 5 - Camera mount.png" alt = "Camera mount"/>
 				</div>
 				<br />
 				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Extracting the elements of interest</h1>
 				<a>
 					In this part, I am going to explain how I did extract
@@ -191,10 +206,12 @@ const SocialVR =()=>{
 					  justifyContent: "center",
 					}}
 					  >
-					<img src="/images/SocialVR/SocialVR - 6 - Rectangle based calculations.png" alt = "In game and camera feed"/>
+					<img src="/images/SocialVR/SocialVR - 6 - Rectangle based calculations.png" alt = "Rectangle based calculations"/>
 				</div>
 				<br />
 				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Merging of the two seflies</h1>
 				<a>
 					Using this rectangle I apply grabcut on both selfies.
@@ -211,10 +228,12 @@ const SocialVR =()=>{
 					  justifyContent: "center",
 					}}
 					  >
-					<img src="/images/SocialVR/SocialVR - 7 - How grabcut works.png" alt = "In game and camera feed"/>
+					<img src="/images/SocialVR/SocialVR - 7 - How grabcut works.png" alt = "How grabcut works"/>
 				</div>
 				<br />
 				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Optimization of the GrabCut method</h1>
 				<a>
 					After trying out this method, I noticed that the resulting
@@ -245,10 +264,12 @@ const SocialVR =()=>{
 					  justifyContent: "center",
 					}}
 					  >
-					<img src="/images/SocialVR/SocialVR - 9 - Final result.png" alt = "In game and camera feed"/>
+					<img src="/images/SocialVR/SocialVR - 9 - Final result.png" alt = "Final result"/>
 				</div>
 				<br />
 				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Results of this method</h1>
 				<a>
 					As you can see the result is not that realistic. In order
@@ -262,6 +283,9 @@ const SocialVR =()=>{
 					requires an initial mask of the object to remove. So we
 					could use the masks defined by the grabCut algorithm. 
 				</a>
+				<br />
+				<br />
+			    <SectionDivider/>
 				<h1>Conclusion</h1>
 				<a>
 					I have described SelfieVR, a unity project where users
@@ -278,6 +302,9 @@ const SocialVR =()=>{
 					real life experiences such as travelling and meeting other
 					people.
 				</a>
+				<br />
+				<br />
+			    <SectionDivider/>
 				<h1> Videos </h1>
 				<br />
 				<br />

@@ -3,14 +3,14 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\SocialVR",
+    "\\public\\images\\Stabbing Post-it VR",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Technologies",
-    "\\src\\constants",
-    "\\src\\layout",
-    "\\src\\pages"
+    "\\src\\components\\Projects",
+    "\\src\\components\\TimeLine",
+    "\\src\\pages",
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\public\\images\\SocialVR\\SocialVR - 3 - Two giants classing.png",
+  "SelectedNode": "\\src\\components",
   "PreviewInSolutionExplorer": false
 }
