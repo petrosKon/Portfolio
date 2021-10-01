@@ -5,7 +5,9 @@ const SocialVR =()=>{
 	return(
 		<Layout>
 			<div>
-				<SectionTitle>Motivation</SectionTitle>
+			<SectionTitle>Social VR</SectionTitle>
+			<SectionDivider/>
+				<h1>Motivation</h1>
 				<a>
 					This project started by thinking about the value of sharing
 					an experience. One can capture a proof of a spatial existence or a temporal state or a way to express their social

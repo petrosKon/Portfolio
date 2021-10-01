@@ -6,7 +6,9 @@ const StabbingPostitsVR =() =>{
 	return(
 	<Layout>
 		<div>
-		<SectionTitle>Motivation</SectionTitle>
+		<SectionTitle>Stabbing Post-its VR</SectionTitle>
+		<SectionDivider/>
+		<h1>Motivation</h1>
 		<a>
 			Brainstorming with post-its can be a fun and creative way to come up with new ideas, from silly ones to more serious ones. These sessions can provide powerful insights to problems that will appear and as well as ways to tackle them. So, as a team we found a new way to brainstorm with post-its but this time in the virtual world and more specifically using Oculus Quest. 
 		</a>
