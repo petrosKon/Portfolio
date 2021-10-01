@@ -1,6 +1,8 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
 import { GridContainer } from '../components/Projects/ProjectsStyles';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const ARcher =() =>{
 	return(
@@ -56,22 +58,6 @@ const ARcher =() =>{
 		</a>
 		<br />
 		<br />
-		<script type="text">
-		if(!Physics.Raycast(transform.position, Vector3.down, Mathf.Infinity))
-        [
-            heroRigidbody.constraints = RigidbodyConstraints.None;
-            heroRigidbody.useGravity = true;
-            heroRigidbody.isKinematic = false;
-        ]
-        else
-        [
-            heroRigidbody.constraints = RigidbodyConstraints.FreezePositionY;
-            heroRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-
-            heroRigidbody.useGravity = false;
-            heroRigidbody.isKinematic = true;
-        ]
-		</script>
 		</div>
 		<br/>
 	</Layout>

@@ -41,7 +41,31 @@ export const projects = [
     tags: ['Unity', 'AR', 'C#', 'Mobile'],
     source: '/ARcher',
     visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
-    id: 4,
+    id: 4},
+    {
+    title: 'VR Haptic Glove - Magos',
+    description: "This is an AR game that transforms a game into another. A card game into a platformer into an unconventional way",
+    image: '/images/ARcher/ARcher - Project Image.jpg',
+    tags: ['Unity', 'AR', 'C#', 'Mobile'],
+    source: '/ARcher',
+    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    id: 5},
+    {
+    title: 'Fruit Slicer VR',
+    description: "This is an AR game that transforms a game into another. A card game into a platformer into an unconventional way",
+    image: '/images/ARcher/ARcher - Project Image.jpg',
+    tags: ['Unity', 'AR', 'C#', 'Mobile'],
+    source: '/ARcher',
+    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    id: 6},
+    {
+    title: 'Superman VR',
+    description: "This is an AR game that transforms a game into another. A card game into a platformer into an unconventional way",
+    image: '/images/ARcher/ARcher - Project Image.jpg',
+    tags: ['Unity', 'AR', 'C#', 'Mobile'],
+    source: '/ARcher',
+    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    id: 7,
   },
 ];
 
