@@ -5,11 +5,12 @@
     "\\public\\images",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Projects",
+    "\\src\\components\\Header",
+    "\\src\\components\\Hero",
     "\\src\\components\\TimeLine",
     "\\src\\pages",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\components",
+  "SelectedNode": "\\public\\images\\Superman VR",
   "PreviewInSolutionExplorer": false
 }
