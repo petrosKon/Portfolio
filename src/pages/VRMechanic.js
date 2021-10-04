@@ -1,5 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
+import { CenterImage } from '../components/Projects/ProjectsStyles';
 
 
 const VRMechanic =()=>{
@@ -15,12 +16,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 				<img src="/images/VR Engine/VR Engine - Project Image.png" alt = "Unity Scene"/>
 			</div>
 			<br />
@@ -31,12 +27,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 				<img src="/images/VR Engine/VR Engine - VRTK Plugin.jpg" alt = "VRTK plugin"/>
 			</div>
 			<br />
@@ -48,12 +39,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}> 
 				<img src="/images/VR Engine/VR Engine - Teleport Targets.jpg" alt = "VRTK plugin"/>
 			</div>
 			<br />
@@ -64,12 +50,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 				<code>
 					public Enum Status [
 						<br />
@@ -92,12 +73,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 				<img src="/images/VR Engine/VR Engine - Engine Part Script.jpg" alt = "VRTK plugin"/>
 			</div>
 			<br />
@@ -107,12 +83,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 				<img src="/images/VR Engine/VR Engine - Red Tubes Numbered.png" alt = "Red Tubes Numbered"/>
 			</div>
 			<br />
@@ -125,12 +96,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/QtnwzajPdSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			</div>
 			<br />
 			<br />
@@ -142,12 +108,7 @@ const VRMechanic =()=>{
 			</a>
 			<br />
 			<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/VR Engine/VR Engine - Red Tubes Screws.jpg" alt = "Red Tubes Screws"/>
 			  </div>
 			  <br />
@@ -161,12 +122,7 @@ const VRMechanic =()=>{
 			  <br />
 			  <SectionDivider/>
 			  <h1>Videos</h1>
-			  <div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			  <div style={CenterImage}>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/qYI8fDcJ6cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			</div>
 			<br />
 		</div>

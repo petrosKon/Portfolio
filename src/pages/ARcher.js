@@ -1,8 +1,7 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
-import { GridContainer } from '../components/Projects/ProjectsStyles';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { GridContainer, CenterImage } from '../components/Projects/ProjectsStyles';
+
 
 const ARcher =() =>{
 	return(
@@ -21,12 +20,7 @@ const ARcher =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/ARcher/ARcher - Cards.jpg" alt = "Cards utilized in game"/>
 			  </div>
 		<br />

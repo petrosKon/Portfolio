@@ -8,10 +8,11 @@ export const Img = styled.img`
   object-fit: cover;
   overflow: hidden;
 `;
-export const CenterImage = styled.div`
-    display: "flex",
+
+export const CenterImage = {
+	 display: "flex",
 	justifyContent: "center"
-`;
+};
 
 export const GridContainer = styled.section`
 display: grid;

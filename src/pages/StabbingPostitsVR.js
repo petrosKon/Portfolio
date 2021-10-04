@@ -1,6 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
-import { GridContainer } from '../components/Projects/ProjectsStyles';
+import { GridContainer, CenterImage } from '../components/Projects/ProjectsStyles';
 
 const StabbingPostitsVR =() =>{
 	return(
@@ -14,12 +14,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 1.png" width="500" height="400" alt = "Brainstorming with Post-its"/>
 			  </div>
 		<br />
@@ -34,12 +29,7 @@ const StabbingPostitsVR =() =>{
 		<h1>Design</h1>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 2.png" alt = "Miro"/>
 			  </div>
 		<br />
@@ -49,12 +39,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 3.png" alt = "Drawing on notes"/>
 			  </div>
 		<br />
@@ -64,12 +49,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 4.png" alt = "Drawing on notes"/>
 			  </div>
 		<br />
@@ -79,12 +59,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 5.png" alt = "Drawing on notes"/>
 			  </div>
 		<br />
@@ -94,12 +69,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 6.png" alt = "Drawing on notes"/>
 			  </div>
 		<br />
@@ -118,12 +88,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 7.png" alt = "Hand grabbing sword"/>
 			  </div>
 		<br />
@@ -140,12 +105,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 10.png" alt = "Sword and post-its final positions"/>
 			  </div>
 		<br />
@@ -155,12 +115,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 11.png" alt = "New sword stand"/>
 			  </div>
 		<br />
@@ -170,12 +125,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 12.png" alt = "Sword on the stone"/>
 			  </div>
 		<br />
@@ -192,33 +142,14 @@ const StabbingPostitsVR =() =>{
 		<SectionDivider/>
 		<h1>Final Version</h1>
 		<a>
-			Our idea from the start was to have the user stand on an island, with the Post-Its in front of them, and the overview of created groups next to them.
+			Our idea from the start was to have the user stand on an island, with the Post-Its in front of them, and the overview of created groups next to them.We have also added some trees, stones, and animated grass to make the environment more alive.
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
-			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 13.jpg" alt = "Drawing of the environment"/>
-			  </div>
-		<br />
-		<br />
-		<a>
-			We have also added some trees, stones, and animated grass to make the environment more alive.
-		</a>
-		<br />
-		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
-			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 14.png" alt = "Sword on the stone"/>
-			  </div>
+			<GridContainer>
+			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 13.jpg" width="500" height="400" alt = "Drawing of the environment"/>		
+			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 14.png" width="500" height="400" alt = "Sword on the stone"/>
+			 </GridContainer>
 		<br />
 		<br />
 		<a>
@@ -226,12 +157,7 @@ const StabbingPostitsVR =() =>{
 		</a>
 		<br />
 		<br />
-			<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+			<div style={CenterImage}>
 			  <img src="/images/Stabbing Post-it VR/Stabbing Post-its - 15.png" alt = "Sword on the stone"/>
 			  </div>
 		<br />
@@ -248,12 +174,7 @@ const StabbingPostitsVR =() =>{
 		<SectionDivider/>
 		<br />
 		<h1>Video</h1>
-		<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-			  >
+		<div style={CenterImage}>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/yf8Abz3wlqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		 </div>
 		</div>

@@ -1,5 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
+import { CenterImage } from '../components/Projects/ProjectsStyles';
 
 const SocialVR =()=>{
 	return(
@@ -44,12 +45,7 @@ const SocialVR =()=>{
 				</a>
 				<br />
 				<br />
-				<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-				  >
+				<div style={CenterImage}>
 					<img src="/images/SocialVR/SocialVR - 1 - In-game and Camera feed.png" alt = "In game and camera feed"/>
 				</div>
 				<br />
@@ -76,12 +72,7 @@ const SocialVR =()=>{
 				</a>
 				<br />
 				<br />
-				<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-				  >
+				<div style={CenterImage}>
 					<img src="/images/SocialVR/SocialVR - 2 - Wizard casting spell.png" alt = "Wizard casting spell"/>
 				</div>
 				<br />
@@ -95,12 +86,7 @@ const SocialVR =()=>{
 				</a>
 				<br />
 				<br />
-				<div
-				style={{
-				  display: "flex",
-				  justifyContent: "center",
-				}}
-				  >
+				<div style={CenterImage}>
 					<img src="/images/SocialVR/SocialVR - 3 - Two giants classing.png" alt = "Two giants classing"/>
 				</div>
 				<br />
@@ -164,12 +150,7 @@ const SocialVR =()=>{
 				</a>
 				<br />
 				<br />
-				<div
-					style={{
-					  display: "flex",
-					  justifyContent: "center",
-					}}
-					  >
+				<div style={CenterImage}>
 					<img src="/images/SocialVR/SocialVR - 5 - Camera mount.png" alt = "Camera mount"/>
 				</div>
 				<br />
@@ -202,12 +183,7 @@ const SocialVR =()=>{
 				</a>
 				<br />
 				<br />
-				<div
-					style={{
-					  display: "flex",
-					  justifyContent: "center",
-					}}
-					  >
+				<div style={CenterImage}>
 					<img src="/images/SocialVR/SocialVR - 6 - Rectangle based calculations.png" alt = "Rectangle based calculations"/>
 				</div>
 				<br />
@@ -224,12 +200,7 @@ const SocialVR =()=>{
 				</a>
 				<br />
 				<br />
-				<div
-					style={{
-					  display: "flex",
-					  justifyContent: "center",
-					}}
-					  >
+				<div style={CenterImage}>
 					<img src="/images/SocialVR/SocialVR - 7 - How grabcut works.png" alt = "How grabcut works"/>
 				</div>
 				<br />
@@ -260,12 +231,7 @@ const SocialVR =()=>{
 				</a>
 				<br />
 				<br />
-				<div
-					style={{
-					  display: "flex",
-					  justifyContent: "center",
-					}}
-					  >
+				<div style={CenterImage}>
 					<img src="/images/SocialVR/SocialVR - 9 - Final result.png" alt = "Final result"/>
 				</div>
 				<br />
@@ -310,12 +276,7 @@ const SocialVR =()=>{
 				<h1> Videos </h1>
 				<br />
 				<br />
-				<div
-					style={{
-					  display: "flex",
-					  justifyContent: "center",
-					}}
-					  >
+				<div style={CenterImage}>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLDZktaCsdtVd3d242j5bLonuyc_trXKvB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				<br />
