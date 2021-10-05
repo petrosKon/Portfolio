@@ -45,9 +45,9 @@ export const projects = [
     {
     title: 'VR Haptic Glove - Magos',
     description: "This is an AR game that transforms a game into another. A card game into a platformer into an unconventional way",
-    image: '/images/ARcher/ARcher - Project Image.jpg',
-    tags: ['Unity', 'AR', 'C#', 'Mobile'],
-    source: '/ARcher',
+    image: '/images/VR Haptic Glove - Magos/Magos - Project Image.jpg',
+    tags: ['Unity', 'VR', 'C#'],
+    source: '/HapticGloveVR',
     visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
     id: 5},
     {
