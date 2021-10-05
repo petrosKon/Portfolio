@@ -1,7 +1,59 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
 import { GridContainer, CenterImage } from '../components/Projects/ProjectsStyles';
+import ReactMarkdown from 'react-markdown';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
+const codeBlockHero = 
+	`if(!Physics.Raycast(transform.position, Vector3.down, Mathf.Infinity))
+        {
+            heroRigidbody.constraints = RigidbodyConstraints.None;
+            heroRigidbody.useGravity = true;
+            heroRigidbody.isKinematic = false;
+        }
+        else
+        {
+            heroRigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+            heroRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
+            heroRigidbody.useGravity = false;
+            heroRigidbody.isKinematic = true;
+        }
+`;
+
+const fireflyController = 
+
+	`float lerpPercentage = Mathf.PingPong(Time.time, repeatTime) / repeatTime;
+
+    transform.position = Vector3.Lerp(startingPosition.position, finalPosition.position, lerpPercentage);
+    if (Vector3.Distance(transform.position, startingPosition.position) < 0.1f)
+    {
+       flyAnimator.SetBool("Fly forward", true);
+       transform.LookAt(finalPosition);
+
+    }
+    else if (Vector3.Distance(transform.position, finalPosition.position) < 0.1f)
+    {
+       transform.LookAt(startingPosition);
+
+    }`;
+
+const piranhaPlantController =
+
+`				if (!isDead && timeBeforeBites < 0f)
+        {
+            if (Vector3.Distance(transform.position, player.transform.position) <= lookRadius)
+            {
+                transform.LookAt(player.transform);
+                piranhaPlantAnimator.SetTrigger("Bite Attack");
+            }
+
+        }
+        else if (!isDead && timeBeforeBites > 0f)
+        {
+            timeBeforeBites -= Time.deltaTime;
+        }`;
 
 const ARcher =() =>{
 	return(
@@ -22,7 +74,7 @@ const ARcher =() =>{
 		<br />
 			<div style={CenterImage}>
 			  <img src="/images/ARcher/ARcher - Cards.jpg" alt = "Cards utilized in game"/>
-			  </div>
+			</div>
 		<br />
 		<br />
 		<SectionDivider/>
@@ -52,6 +104,77 @@ const ARcher =() =>{
 		</a>
 		<br />
 		<br />
+		<div style={CenterImage}>
+			<SyntaxHighlighter  language="csharp" style={xonokai}>
+				{codeBlockHero}
+			</SyntaxHighlighter>
+		</div>
+		<br />
+		<a>
+		I have to point also that our hero and the enemies are prefabs that are animated and they are not just moving around the scene like static objects. They have a complex animator components and trees that are shown in the next picture:
+		</a>
+		<br />
+		<br />
+			<div style={CenterImage}>
+			  <img src="/images/ARcher/ARcher - Animation Tree.jpg" alt = "Cards utilized in game"/>
+			</div>
+		<br />
+		<h2>Two of Spades</h2>
+		<GridContainer>
+			<img src="/images/ARcher/image-03 - Two of Spades.jpg" width = "300" height = "400" alt = "Ace of Spades"/>
+			<img src="/images/ARcher/image-04 - Arena Two of Spades.jpg" width = "400" height = "400" alt = "Arena Ace of Spades"/>
+		</GridContainer>
+		<br />
+		<a>
+			This is the second card of our game we introduce the first enemy variation, the frightfly. These flies move
+			way too fast and it is very difficult to bypass without shooting them first. Shooting them also is no easy
+			task. In order to pass this level, the player must avoid or kill the fireflies and as well as evade the spikes.
+			The fireflies move arround two constant points where we set them in our inspector and their controller is:
+		</a>
+		<br />
+		<br />
+		<div style={CenterImage}>
+			<SyntaxHighlighter  language="csharp" style={xonokai}>
+				{fireflyController}
+			</SyntaxHighlighter>
+		</div>
+		<br />
+		<h2>Eight of Spades</h2>
+		<GridContainer>
+			<img src="/images/ARcher/image-05 - Eight of Spades.jpg" width = "300" height = "400" alt = "Ace of Spades"/>
+			<img src="/images/ARcher/image-06 - Arena Eight of Spades.jpg" width = "400" height = "400" alt = "Arena Ace of Spades"/>
+		</GridContainer>
+		<br />
+		<a>
+			his level is a little more tricky than the others. It is almost impossible for the player to pass without
+			shooting the piranha plants. These plants are able to detect the player when in close proximity and
+			they quickly kill him. The piranha plants continuously check the proximity of the player and they attack him when it gets close to them.
+		</a>
+		<br />
+		<br />
+		<div style={CenterImage}>
+			<SyntaxHighlighter  language="csharp" style={xonokai}>
+				{piranhaPlantController}
+			</SyntaxHighlighter>
+		</div>
+		<h2>Five of Hearts</h2>
+		<GridContainer>
+			<img src="/images/ARcher/image-07 - Five of Hearts.jpg" width = "300" height = "400" alt = "Ace of Spades"/>
+			<img src="/images/ARcher/image-08 - Arena Five of Hearts.jpg" width = "400" height = "400" alt = "Arena Ace of Spades"/>
+		</GridContainer>
+		<br />
+		<a>
+			Our last card for our demo, the Five Of Hearts. It includes our last enemy, the peashooter where it
+			functions like a turret gun. According to which direction it is facing it is shooting projectiles. The videos of the application contain two different configuration that can show the possibilities of such an application, that multiple large scale levels can be created even with the same cards!!
+		</a>
+		<br />
+		<br />
+		<SectionDivider/>
+		<br />
+		<h1>Video</h1>
+		<div style={CenterImage}>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 </div>
 		</div>
 		<br/>
 	</Layout>

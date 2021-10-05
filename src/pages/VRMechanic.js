@@ -1,7 +1,18 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
 import { CenterImage } from '../components/Projects/ProjectsStyles';
+import ReactMarkdown from 'react-markdown';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
+const statusCodeSnippet = 
+	`public enum Status
+        {
+            Connectable,
+            Disconnectable,
+            Grabbable,
+            Ungrabbable
+        }`;
 
 const VRMechanic =()=>{
 	return(
@@ -51,21 +62,10 @@ const VRMechanic =()=>{
 			<br />
 			<br />
 			<div style={CenterImage}>
-				<code>
-					public Enum Status [
-						<br />
-						Disconnectable,
-						<br />
-						Connectable,
-						<br />
-						Grabbable,
-						<br />
-						Ungrabbable	
-						<br />
-					]	
-				</code>
+				<SyntaxHighlighter  language="csharp" style={xonokai}>
+					{statusCodeSnippet}
+				</SyntaxHighlighter>
 			</div>
-			<br />
 			<br />
 			<a>
 				Each status determine how the user is able to interact with that specific part. For example when the part is <b>Connectable</b>, it means that this part can now connect to another part. Then we need to define which part connects to another part. This is done with an <b>Enumerator</b> we call <b>Type</b>. 
