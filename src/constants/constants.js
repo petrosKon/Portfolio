@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Collocated VR',
-    description: "This project is focused on writing a multiplayer Unity application. My goals was to integrate different technologies into a scene and create a smart space that is able to track and display any content on any of these devices. In our case, the system contained two devices which were two Oculus Quest 2 on par with Optitrack. This system could serve as a sandbox application in order to test new types of interactions that could happen between two co-located users in the virtual world.",
+    description: "This project was created on par with IP Paris as my internship. The goal of this project was to combine multiple XR devices into one smart space. The current implentation involves the Optitrack and the Oculus Quest 2",
       image: '/images/Internship - Project Image.png',
       tags: ['Unity', 'VR', 'C#', 'Visual Studio', 'Optitrack'],
     source: 'https://google.com',
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: 'SocialVR',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+    description:"The main objective of this project is to combine VR with the real world. This is done through a new kind of selfie that enables users to take picture and blend their environments in two ways. ",
     image: '/images/SocialVR - Project Image.jpg',
     tags: ['Unity', 'VR', 'C#', 'OpenCV'],
     source: '/SocialVR',
@@ -52,16 +52,16 @@ export const projects = [
     id: 5},
     {
     title: 'Fruit Slicer VR',
-    description: "This is an AR game that transforms a game into another. A card game into a platformer into an unconventional way",
-    image: '/images/ARcher/ARcher - Project Image.jpg',
-    tags: ['Unity', 'AR', 'C#', 'Mobile'],
-    source: '/ARcher',
+    description: "I created this project on par with IP Paris for a paper that is trying to explore the harmful concequences of VR and also its boundaries",
+    image: '/images/FruitSlicer VR/FruitSlicer VR - Project Image.png',
+    tags: ['Unity', 'VR', 'C#', 'Photon'],
+    source: '/FruitSlicerVR',
     visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
     id: 6},
     {
-    title: 'Superman VR',
+    title: 'Pet Endless Runner',
     description: "This is an AR game that transforms a game into another. A card game into a platformer into an unconventional way",
-    image: '/images/ARcher/ARcher - Project Image.jpg',
+    image: '/images/Animal Run/Animal Run - Project Image.jpg',
     tags: ['Unity', 'AR', 'C#', 'Mobile'],
     source: '/ARcher',
     visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
