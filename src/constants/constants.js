@@ -44,8 +44,8 @@ export const projects = [
     id: 4},
     {
     title: 'VR Haptic Glove - Magos',
-    description: "This is an AR game that transforms a game into another. A card game into a platformer into an unconventional way",
-    image: '/images/VR Haptic Glove - Magos/Magos - Project Image.jpg',
+    description: "When I worked as a developer at Magos, my main task was to create an API inder to integrate a custom VR Haptic glove into Unity.",
+    image: '/images/VR Haptic Glove - Magos/Magos - Project Image.jpeg',
     tags: ['Unity', 'VR', 'C#'],
     source: '/HapticGloveVR',
     visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
