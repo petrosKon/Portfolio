@@ -65,8 +65,9 @@ const FruitSlicerVR =() =>{
 			The whole application was developed purely in Unity and it was made for the Oculus Quest specifically.
 		</a>
 		<br />
-			<SectionDivider/>
-			<h1>Implementation</h1>
+		<br />
+		<SectionDivider/>
+		<h1>Implementation</h1>
 		<a>
 			hen I first started this application, it was a simple catch a ball game, where one user could throw balls to the player and the other would try to grab them.
 			It was developed and run in one machine, a pc or a laptop and the player in the laptop would see the user in VR and in real-life.
@@ -153,7 +154,7 @@ const FruitSlicerVR =() =>{
 			 </GridContainer>
 		<br />
 		<a>
-			he fruit that the samurai is throwing is random. I need to point out also that the samurai is a humanoid and is animated so that it feels more game-like to the player.
+			The fruit that the samurai is throwing is random. I need to point out also that the samurai is a humanoid and is animated so that it feels more game-like to the player.
 			The animation of the samurai is done using the Unity's <b>Animator</b> component and all the animations were taken from the <b>Mixamo</b> website, which has a lot of free humanoid animations.
 		</a>
 		<br />
@@ -162,6 +163,51 @@ const FruitSlicerVR =() =>{
 				<img src="/images/FruitSlicer VR/FruitSlicer VR - 06  Samurai Animation Tree.png" width="800" height="400" alt = "Environment"/>
 			</div>
 		<br />
+		<a>
+			The tree is very simple to follow, a greeting animation will play when the user gets into the game and then when a fruit is thrown (when the pc player clicks on a spot) then the throwing animation will play.
+			After adding a simple narrative we then proceeded to make the fruit slicing as much as enticing as possible so that the user would chase relentlessly to cut one.
+			First, we added awesome particle effects to the fruits like a splatter effect according to which fruit the user is slicing (for example if it is a watermelon red, a lime green but a banana doesn't have any juice).
+			Also, the Oculus controllers would vibrate on a successful fruit cut to improve the haptic feedback.
+			In order to make the fruit cutting even more enganging we added a crowd. This crowd would be composed of Geishas that would cheer the user on a successful cut, each geisha is also a humanoid and it's animations are taken in a simular way from the Mixamo website.
+		</a>
+		<br />
+			<br />
+			<div style={CenterImage}>
+				<img src="/images/FruitSlicer VR/FruitSlicer VR - 07 -Geishas.png" width="800" height="600" alt = "Geishas"/>
+			</div>
+		<br />
+		<a>
+			The last thing that would make the user even more enganged with our game was to add a combo counter. The combo meter would increase each time the user makes a successful cut on a fruit and return to 0 if he/she fails to cut one.
+		</a>
+		<br />
+			<br />
+			<div style={CenterImage}>
+				<img src="/images/FruitSlicer VR/FruitSlicer VR - 08 -Combo Counter.png" width="400" height="200" alt = "Geishas"/>
+			</div>
+		<br />
+		<a>
+			Last but not least, I need to mention one last feature I added but didn't make it to the last version. A ninja. This scene has everything, so it wouldn't be nice if it missed a ninja. The ninja's job was also to push the player out of boundaries.
+			In order to create the ninja I also added a day-night cycle so that the ninja would appear only at night.
+			In the night the ninja would appear in front of the user and throw shurikens. The player would then have to step out of the ninja's way because the combo would be broken. This feature although really cool and really fitted the narrative didn't make it to the last version because we changed a little bit our approach of how we wanted the user to hit the boundaries.
+			The ninja didn't fit our purpose because we wanted a more methodical approach of how the user will pass the boundaries. Instead of making random clicks, we pre-recorded a sequence of fruit throwing and replay it on each participant.
+		</a>
+		<br />
+		<a>
+		This picture displays a detailed overview of how our current system works:
+		</a>
+		<br />
+			<br />
+			<div style={CenterImage}>
+				<img src="/images/FruitSlicer VR/FruitSlicer VR - 09 -Overview.png" width="800" height="400" alt = "Application Overview"/>
+			</div>
+		<br />
+		<br />
+		<SectionDivider/>
+		<br />
+		<h1>Video</h1>
+		<div style={CenterImage}>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/0ph16W51JTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		</div>
 		<br/>
 	</Layout>

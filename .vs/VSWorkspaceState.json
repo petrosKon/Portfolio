@@ -3,14 +3,14 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\VR Haptic Glove - Magos",
+    "\\public\\images\\FruitSlicer VR",
+    "\\public\\images\\SocialVR",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\NavDropDown",
-    "\\src\\components\\Projects",
     "\\src\\components\\Technologies",
-    "\\src\\constants"
+    "\\src\\constants",
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\HapticGloveVR.js",
+  "SelectedNode": "\\public\\images\\FruitSlicer VR\\FruitSlicer VR - 09 -Overview.png",
   "PreviewInSolutionExplorer": false
 }
