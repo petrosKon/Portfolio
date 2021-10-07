@@ -3,14 +3,14 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\FruitSlicer VR",
-    "\\public\\images\\SocialVR",
+    "\\public\\images\\Pet Endless Runner",
+    "\\public\\images\\Superman VR",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Technologies",
+    "\\src\\components\\Projects",
     "\\src\\constants",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\public\\images\\FruitSlicer VR\\FruitSlicer VR - 09 -Overview.png",
+  "SelectedNode": "\\src\\components\\Projects\\Projects.js",
   "PreviewInSolutionExplorer": false
 }
