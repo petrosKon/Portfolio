@@ -65,15 +65,15 @@ export const projects = [
     tags: ['Unity', 'C#', 'WebGL'],
     source: '/PetEndlessRunner',
     visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
-    id: 7,
-    
+    id: 7},
+    {
     title: 'Superman VR',
-    description: "This is one of my first Unity project and was created for a website. This is an endless runner where players can upload their scores in a online leaderboard",
-    image: '/images/Pet Endless Runner/Pet Endless Runner - Project Image.jpg',
+    description: "This is a VR project I created in order to experiment and test the functionallities of the Oculus Quest hand tracking",
+    image: '/images/Superman VR/Superman VR - Project Image.jpg',
     tags: ['Unity', 'C#', 'VR', 'Hand Tracking'],
-    source: '/PetEndlessRunner',
+    source: '/SupermanVR',
     visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
-    id: 7,
+    id: 8,
   },
 ];
 
