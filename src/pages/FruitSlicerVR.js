@@ -84,7 +84,7 @@ const FruitSlicerVR =() =>{
 			The script that was able to do that, was the following:
 		</a>
 		<br />
-			<br />
+		<br />
 			<div style={CenterImage}>
 				<SyntaxHighlighter  language="csharp" style={xonokai}>
 					{displayBoundariesCode}
