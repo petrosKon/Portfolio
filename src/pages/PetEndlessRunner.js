@@ -1,6 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
-import { GridContainer, CenterImage } from '../components/Projects/ProjectsStyles';
+import { GridContainer, CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
@@ -95,20 +95,20 @@ const PetEndlessRunner =() =>{
 		<SectionTitle>Pet Endless Runner</SectionTitle>
 		<SectionDivider/>
 		<h1>Motivation</h1>
-		<a>
+		<CenterText>
 			This is was my first game that I completed by myself, without working in a company, in Unity. The purpose of that game is to create an endless runner using animals as characters. The choice of animals was due to the fact that this game 
 			is integrated into a social media for pets.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 		<SectionDivider/>
 		<h1>Implementation</h1>
-		<a>
+		<CenterText>
 			The first thing we needed to do was to create an endless scroller, meaning that the animal would have to run indefinetely. In order to do that we continuously update the position of our and as well as the camera's in order to follow the player.
 			Each animal has a player controller that determines the starting speed and then it increases an fixed amount according to how much it moved.
 			The next thing we need to do is to spanwn the platforms in the correct position. The correct position means that the player is able to jump and it is not too far away and or the platforms are not coinciding.
 			So in order to do that, the first thing we do is get the platforms' width that we already defined and put them into a list.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -117,9 +117,9 @@ const PetEndlessRunner =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-		<a>
+		<CenterText>
 			Then we proceed to generate a new platform on a random point using the following code:
-		</a>
+		</CenterText>
 		<br />
 			<br />
 			<div style={CenterImage}>
@@ -128,10 +128,10 @@ const PetEndlessRunner =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-		<a>
+		<CenterText>
 		What this code does is basically spawns platforms in the correct positions and also prevent spawn overlap. In order to make our game more interactive we also used some pickups and enemies. In both our enemies and pickups and platforms
 		we are using <b>object pooling</b>, to reduce the number of objects in the scene and avoid unecessary data overflows.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -140,9 +140,9 @@ const PetEndlessRunner =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-		<a>
+		<CenterText>
 			Now we are going to talk about our pick-ups. There are many types of pick-ups. Most of them are different fruits that give you points according to their rarity and two power-ups. The first one being double point score and the second one invicibility for a short period of time.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -150,20 +150,20 @@ const PetEndlessRunner =() =>{
 			  </div>
 		<br />
 		<br />
-		<a>
+		<CenterText>
 			The next thing we are to describe is our enemies. There are 4 types of enemies. A cactus, spikes, a woodtrap and a Bird. Each of them are static enemies and they appear at the platform.
 			We have also to make sure that since the enemies have a certain length that they are not placed in platforms that they are smaller of them and as a result kill the player.We have to point out that the bird enemy is animated and we are using an animator component.
 			In this game the player can choose between 4 characters, a cat, a corgi, a dog and a rabbit. Each one of them are animated and they also have an 
 			animator component.
-		</a>
+		</CenterText>
 		<GridContainer>
 			<img src="/images/Pet Endless Runner/Pet Endless Runner - 02 - Enemies.jpg" alt = "Enemies"/>
 			<img src="/images/Pet Endless Runner/Pet Endless Runner - 03 - Characters.jpg" alt = "Characters"/>
 		</GridContainer>
-		<a>
+		<CenterText>
 		The last thing we have to make sure in our environment is that is that the player is not getting bored. This is accomplished by changing different backgrounds as the player runs across the stage. These backgrounds are 
 		again 4: Mountains, Forest, Volcano and Night Forest.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -171,10 +171,10 @@ const PetEndlessRunner =() =>{
 			  </div>
 		<br />
 		<br />
-		<a>
+		<CenterText>
 			Now, in order for our game to fit in the social platform we need a way to store our scores into a leaderboard. This is done by using <b>dreamlo</b> as our leaderboard, which is able to host our scores.
 			When the user ends a successful run he/she is able to upload their score. When I created that application I used the deprecated class of Unity of <b>WWW</b> in order to post my score into <b>dreamlo</b>
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -183,16 +183,16 @@ const PetEndlessRunner =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-		<a>
+		<CenterText>
 			After this part is finished, the next step was to set up the application in order to be complete. Meaning I created, a start Menu and pause Menu:
-		</a>
+		</CenterText>
 		<GridContainer>
 			<img src="/images/Pet Endless Runner/Pet Endless Runner - 05 - Start Menu.jpg" width="600" height="300" alt = "Start Menu"/>
 			<img src="/images/Pet Endless Runner/Pet Endless Runner - 08 - Pause Menu.jpg" width="600" height="300" alt = "Pause Menu"/>
 		</GridContainer>
-		<a>
+		<CenterText>
 			And then a leaderboard and a character selection screen:
-		</a>
+		</CenterText>
 		<GridContainer>
 			<img src="/images/Pet Endless Runner/Pet Endless Runner - 06 - Leaderboard Menu.jpg" width="600" height="300" alt = "Leaderboard Menu"/>
 			<img src="/images/Pet Endless Runner/Pet Endless Runner - 08 - Pause Menu.jpg" width="600" height="300" alt = "Characters"/>

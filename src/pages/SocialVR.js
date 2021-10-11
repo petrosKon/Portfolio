@@ -1,6 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
-import { CenterImage } from '../components/Projects/ProjectsStyles';
+import { CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
 
 const SocialVR =()=>{
 	return(
@@ -9,7 +9,7 @@ const SocialVR =()=>{
 			<SectionTitle>Social VR</SectionTitle>
 			<SectionDivider/>
 				<h1>Motivation</h1>
-				<a>
+				<CenterText>
 					This project started by thinking about the value of sharing
 					an experience. One can capture a proof of a spatial existence or a temporal state or a way to express their social
 					identities. One may ask then how will this be transferable to the virtual world where VR users can live similar
@@ -29,12 +29,12 @@ const SocialVR =()=>{
 					user is actually transported in space-and-probably time
 					and is living new experiences that are comparable to travelling and sightseeing and are at their core sharable to
 					everyone (VR-accustomed or not). This project was created with another two developer in context of creating something new in VR in order to contribute to a paper.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 			    <SectionDivider />
 				<h1>Describing the player and the scene</h1>
-				<a>
+				<CenterText>
 					First of all, I am not using the regular OVRCameraRig
 					but OVRPlayerController, this gives us the ability to move
 					more freely in the scene, since the controller joystick can be
@@ -42,7 +42,7 @@ const SocialVR =()=>{
 					are shown. The left one is the controller that he/she can
 					interact with and the right one contains the two displays,
 					one for the in-game feed and the web camera feed.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 				<div style={CenterImage}>
@@ -50,7 +50,7 @@ const SocialVR =()=>{
 				</div>
 				<br />
 				<br />
-				<a>
+				<CenterText>
 					When the user takes a photo we need to find a way to display it. I use cannons to throw the photos in front of the
 					player. These cannons follow the player, always face his
 					direction and they are placed in a circular diameter.When
@@ -69,7 +69,7 @@ const SocialVR =()=>{
 					series of particle effects start to appear. After they finish
 					a second skull giant appears and he is constantly casting
 					a magic spell.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 				<div style={CenterImage}>
@@ -77,13 +77,13 @@ const SocialVR =()=>{
 				</div>
 				<br />
 				<br />
-				<a>
+				<CenterText>
 					The last scene is staged in an oasis. When the user sees
 					the oasis he/she can make out two things: A sword with
 					energy that is drawn in it and two giants facing each other.
 					One of them is an earth golem or the protector of the oasis
 					and the other one is a demon.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 				<div style={CenterImage}>
@@ -91,28 +91,28 @@ const SocialVR =()=>{
 				</div>
 				<br />
 				<br />
-				<a>
+				<CenterText>
 					We have to mention that all the models are humanoid
 					rigged models and they carry an animator component.
 					The main idea of the project is to merge two given selfies.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 			    <SectionDivider/>
 				<h1>Merging Feature</h1>
-				<a>
+				<CenterText>
 					One taken in the game and one taken in real life. As for the
 					result I chose to do this merging feature for both sides.
 					Meaning I will have at the end two types of results. First
 					one: The real background with the player's avatar and the
 					second one: The background of the game with the actual
 					physical body of the player.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 			    <SectionDivider/>
 				<h1>Method Used</h1>
-				<a>
+				<CenterText>
 					I looked for ways to extract the user in real life and
 					the player in the game. Finally, I managed to narrow
 					it down to 2 methods. The first one consisted of using
@@ -129,12 +129,12 @@ const SocialVR =()=>{
 					Now I am going to detail the full pipeline of my work
 					and possible enhancements. I will also explain some key
 					notions along the breakdown of the algorithm.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 			    <SectionDivider/>
 				<h1>Calibration of the camera</h1>
-				<a>
+				<CenterText>
 					Since the final images depend on real life images and on
 					virtual elements, I need to have the two pictures taken
 					in each world perfectly aligned, ie, each virtual element
@@ -147,7 +147,7 @@ const SocialVR =()=>{
 					FOV values from the webcam specs. This process can be
 					perfected by using chessboard calibration and making it
 					in a future version a dynamic calibration.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 				<div style={CenterImage}>
@@ -158,7 +158,7 @@ const SocialVR =()=>{
 				<br />
 			    <SectionDivider/>
 				<h1>Extracting the elements of interest</h1>
-				<a>
+				<CenterText>
 					In this part, I am going to explain how I did extract
 					the user in real life and in game. For that I used the
 					built-in function Grabcut. Before heading to details, let's
@@ -180,7 +180,7 @@ const SocialVR =()=>{
 					that it will also coincide with the head in real life.
 					Right now I have the position of the head in pixels. Below, I showcase how I did define the initial rectangle
 					in a simple figure:
-				</a>
+				</CenterText>
 				<br />
 				<br />
 				<div style={CenterImage}>
@@ -191,13 +191,13 @@ const SocialVR =()=>{
 				<br />
 			    <SectionDivider/>
 				<h1>Merging of the two seflies</h1>
-				<a>
+				<CenterText>
 					Using this rectangle I apply grabcut on both selfies.
 					That will give me two masks corresponding to the two silhouettes. Using these masks, I can cut the interesting
 					part in one picture and paste it on top of the other in the
 					same position (The alignment assumption is still valid).
 					The figure below highlights this process:
-				</a>
+				</CenterText>
 				<br />
 				<br />
 				<div style={CenterImage}>
@@ -208,7 +208,7 @@ const SocialVR =()=>{
 				<br />
 			    <SectionDivider/>
 				<h1>Optimization of the GrabCut method</h1>
-				<a>
+				<CenterText>
 					After trying out this method, I noticed that the resulting
 					masks are not as precise as I wanted. So I came up
 					with a way to enhance our results especially for the in
@@ -228,7 +228,7 @@ const SocialVR =()=>{
 					part in one picture and paste it on top of the other in the
 					same position (The alignment assumption is still valid).
 					The figure below highlights this process:
-				</a>
+				</CenterText>
 				<br />
 				<br />
 				<div style={CenterImage}>
@@ -239,7 +239,7 @@ const SocialVR =()=>{
 				<br />
 			    <SectionDivider/>
 				<h1>Results of this method</h1>
-				<a>
+				<CenterText>
 					As you can see the result is not that realistic. In order
 					to make them more plausible, I thought about removing
 					the already existing element before pasting the new one
@@ -250,12 +250,12 @@ const SocialVR =()=>{
 					complete image". The built-in function for inpainting
 					requires an initial mask of the object to remove. So we
 					could use the masks defined by the grabCut algorithm. 
-				</a>
+				</CenterText>
 				<br />
 				<br />
 			    <SectionDivider/>
 				<h1>Conclusion</h1>
-				<a>
+				<CenterText>
 					I have described SelfieVR, a unity project where users
 					can explore different scenes and share their ingame experience with mixed selfies with elements from both the virtual
 					and the real worlds. The final prototype is an independent
@@ -269,7 +269,7 @@ const SocialVR =()=>{
 					the VR experience transcend its exotic nature and having everyone become accustomed to it in a way similar to
 					real life experiences such as travelling and meeting other
 					people.
-				</a>
+				</CenterText>
 				<br />
 				<br />
 			    <SectionDivider/>

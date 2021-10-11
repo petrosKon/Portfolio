@@ -14,6 +14,11 @@ export const CenterImage = {
 	justifyContent: "center"
 };
 
+export const CenterText = styled.p`
+  text-align: justify;
+}
+`;
+
 export const GridContainer = styled.section`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));

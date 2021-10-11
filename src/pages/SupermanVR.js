@@ -1,6 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
-import { GridContainer, CenterImage } from '../components/Projects/ProjectsStyles';
+import { GridContainer, CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
@@ -134,28 +134,28 @@ const SupermanVR =() =>{
 		<SectionTitle>SupermanVR</SectionTitle>
 		<SectionDivider/>
 		<h1>Motivation</h1>
-		<a>
+		<CenterText>
 			The idea of the gesture recognition came to me when I first saw this video:
-		</a>
+		</CenterText>
 		<br />
 		<br />
 		<div style={CenterImage}>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/vSia7t_WlbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<br />
-		<a>
+		<CenterText>
 			So I wanted to create something around it, as well as experiment with it. The code I used in most of my project was from this tutorial, but I needed to deep dive into it and understand it, in order to create the <b>Superman VR</b>.
 			Now, first let's deep dive into the code of this video.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 		<SectionDivider/>
 		<h1>Implementation</h1>
-		<a>
+		<CenterText>
 			First of all, we create a list of <b>OVRBone</b> variables called <b>fingerbones</b>, this list contains all the bones of our hand. Our hand is referenced through the variable called <b>OVRSkeleton</b> and this is the field we are going to use in order to check for a gesture.
 			Gesture recognition as presented in the video is a form of continously searching for gestures. Since the movement of the hand is continuous, we need to constantly check if a gesture is made and if the current position of the fingers correspond to a gesture.
 			We create a <b>struct</b> called <b>Gesture</b> with the following fields:
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -164,10 +164,10 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-		<a>
+		<CenterText>
 		It is easy to understand the name and the list of Vector3 that each gesture contains which are the finger positions. Then we add an <b>UnityEvent</b>. <b>UnityEvents</b> are able to trigger functions when something particular happens and in our case, a gesture.
 		Then we create the following fields:
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -176,10 +176,10 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-		<a>
+		<CenterText>
 		The <b>OVRSkeleton</b> component is the one that we assign our hand. We also create a list of gestures that we are going to use in our application and last of all a debug variable that is going to be used in order to save our gestures.
 		The first step is to find a way to register our gestures and this is done through the <b>Save</b> function.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>
@@ -188,14 +188,14 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-        <a>
+        <CenterText>
             This function enables the user to Save a gesture, it is very easy to understand since it takes all the <b>OVRBone</b> components from the skeleton and we added to the list. Another thing to point out is that <b>skeleton.transform.InverseTransformPoint</b> adds the position that is relative to the parent's, hence the object's local position. We want this kind of information since it will be easier to compare the gestures.
             We then add another field in our code called <b>threshold</b> and this field is very important, since it depicts how closely our hands need to match the gesture in order to trigger the <b>UnityEevent</b>.
             If we put a very big number then even gestures that are close to one of our gestures will trigger, whereas if we put a low threshold then we will need the exact gesture. So the threshold value is going to be decided through trial and error. For the first part I found out that a good value is <b>0.05</b>.
             As we made a way to save the gestures, then we need a way to trigger it. So we put this condition inside the <b>Update</b> function and we save the gesture while pressing the <b>Space</b> button in <b>Debug mode</b>.Then we need to copy the component values while in play mode and paste it when we stop the game, since we can not save anything while in Play mode.
             I believe this could be done better, since it is not really recommended to save it that way. A proper way could be using Json Files to save all the data.
             Now, we move to the part where we write the code that recognizes our gestures.
-        </a>
+        </CenterText>
         <br />
 		<br />
 			<div style={CenterImage}>
@@ -204,10 +204,10 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-        <a>
+        <CenterText>
             It could seem complex at first, but it is really not. The basic principle behind this block of code is that we take the current position of the hand tracking fingers and we compare them with the already saved ones. If the total distance of all fingers is greater than our threshold then it is not the gesture.
             Then this could would need to run all the time since hand tracking and gestures are constantly updated.
-        </a>
+        </CenterText>
         <br />
 		<br />
 			<div style={CenterImage}>
@@ -216,12 +216,12 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-        <a>
+        <CenterText>
         Then in our <b>Update</b> method, we continously check if a new gesture is made and if this gesture falls below a threshold, concerning the previous gestures,it is recognized.
         Elsewhere, if it is not recognized, we create another <b>UnityEvent</b>.
 
         Now we will move to the code that makes our <b>VR player</b> move around like our superhero. We record two gestures with the way described above. One for the player to start and one for the player to stop.
-        </a>
+        </CenterText>
         <br />
 		<br />
 			<GridContainer>
@@ -230,9 +230,9 @@ const SupermanVR =() =>{
 			 </GridContainer>
 		<br />
 		<br />
-        <a>
+        <CenterText>
         Then we need two specify the relative position of the two axis, the <b>HMD</b> axis which is located in the <b>CenterEyeAnchor</b> as well as the <b>Hand</b> axis. The Hmd coordinate system is aligned with the world coordinate system whereas the hand coordinate system is shown in the second picture.
-        </a>
+        </CenterText>
         <br />
 		<br />
 			<GridContainer>
@@ -241,9 +241,9 @@ const SupermanVR =() =>{
 			 </GridContainer>
 		<br />
 		<br />
-        <a>
+        <CenterText>
             We need these coordinates systems because, we want our player to start moving when he is doing a first but also when that fist is aligned with the <b>HMD</b>. We can see that the transform systems point to different directions and as a result we take the following angles as reference.
-        </a>
+        </CenterText>
         <br />
 		<br />
 			<div style={CenterImage}>
@@ -252,10 +252,10 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-        <a>
+        <CenterText>
             We take the right angle of our hand (red axis), because it is pointing backwards, when our hand is aligned. We then proceed to find an angle that is not too restrictive but as well as not too lose. The angle between the hand and <b>HMD</b> will enable to user to turn, when he/she turn both his/her hand as well as its head.
             We then take another angle.
-        </a>
+        </CenterText>
         <br />
 		<br />
 			<div style={CenterImage}>
@@ -264,9 +264,9 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-        <a>
+        <CenterText>
             This angle is set so that the user would be able to initialize the locomotion technique only when he/she holds the hand upwards and not downwards.
-        </a>
+        </CenterText>
         <br />
 		<br />
 			<div style={CenterImage}>
@@ -274,11 +274,11 @@ const SupermanVR =() =>{
 			  </div>
 		<br />
 		<br />
-		<a>
+		<CenterText>
 			The following lines of code are the locomotion technique using our hand. We have a starting speed and then gradually increase the speed of our player. We also set a max speed so that the player doesn't go too fast or too slow.
 			Then we update the <b>HMD</b> according to where the hmd is looking and in correspondance with the hand position and as the result the player moves forward.
 			These functions are placed in the inspector.
-		</a>
+		</CenterText>
         <br />
 		<br />
 			<div style={CenterImage}>
@@ -287,10 +287,10 @@ const SupermanVR =() =>{
 				</SyntaxHighlighter>
 			</div>
 		<br />
-		<a>
+		<CenterText>
 			Last but not least, we have to also need to stop the movement when the user does the stop gesture. This is pretty simple to do, since we do not need to do anything, since the only way to update our speed is by doing the superman fist.
 			When the player stops then, we just set the value of the starting speed to 1.
-		</a>
+		</CenterText>
 		<br />
 		<br />
 			<div style={CenterImage}>

@@ -3,7 +3,7 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\Pet Endless Runner",
+    "\\public\\images\\SocialVR",
     "\\public\\images\\Superman VR",
     "\\src",
     "\\src\\components",
@@ -11,6 +11,6 @@
     "\\src\\constants",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\components\\Projects\\Projects.js",
+  "SelectedNode": "\\public\\images\\CollocatedVR",
   "PreviewInSolutionExplorer": false
 }
