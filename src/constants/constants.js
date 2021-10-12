@@ -5,7 +5,7 @@ export const projects = [
       image: '/images/Internship - Project Image.png',
       tags: ['Unity', 'VR', 'C#', 'Optitrack'],
     source: '/CollocatedVR',
-    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVeMaMwjg-SlbdHiLIk7Q9I6
+    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVeMaMwjg-SlbdHiLIk7Q9I6'
     id: 0,
   },
   {
@@ -72,7 +72,7 @@ export const projects = [
     image: '/images/Superman VR/Superman VR - Project Image.jpg',
     tags: ['Unity', 'C#', 'VR', 'Hand Tracking'],
     source: '/SupermanVR',
-    visit: 'https://www.youtube.com/watch?v=kOAVx5cbF8Q',
+    visit: 'https://www.youtube.com/watch?v=kOAVx5cbF8Q||',
     id: 8,
   },
 ];
