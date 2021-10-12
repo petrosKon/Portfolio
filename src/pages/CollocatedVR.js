@@ -318,6 +318,11 @@ const CollocatedVR =() =>{
 			The application was very challenging to build, it required deep knowledge of motion tracking systems and coordinate systems. It was the most arduous task I have faced yet to this day, but it gave me a lot of knowledge for future use.
 			The next goals are of course to implement different kinds of VR devices such as VR devices such as HTC Vive and even AR devices such as a phone or Hololens and to create a robust system for research purposes.
 		</CenterText>
+		<SectionDivider/>
+		<br />
+		<h1>Video</h1>
+		<div style={CenterImage}>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLDZktaCsdtVeMaMwjg-SlbdHiLIk7Q9I6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		 </div>
 		</div>
 		<br/>
 	</Layout>

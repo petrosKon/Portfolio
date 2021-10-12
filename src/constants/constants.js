@@ -5,7 +5,7 @@ export const projects = [
       image: '/images/Internship - Project Image.png',
       tags: ['Unity', 'VR', 'C#', 'Optitrack'],
     source: '/CollocatedVR',
-    visit: 'https://google.com',
+    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVeMaMwjg-SlbdHiLIk7Q9I6
     id: 0,
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
     image: '/images/SocialVR - Project Image.jpg',
     tags: ['Unity', 'VR', 'C#', 'OpenCV'],
     source: '/SocialVR',
-    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVd3d242j5bLonuyc_trXKvB',
+    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVd3d242j5bLonuyc_trXKvB',
     id: 1,
   },
   {
@@ -23,7 +23,7 @@ export const projects = [
       image: '/images/VR Engine/VR Engine - Project Image.png',
       tags: ['Unity', 'VR', 'C#'],
     source: '/VRMechanic',
-    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVdNabzgn6O14y3jrMjLKEz8',
+    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVdNabzgn6O14y3jrMjLKEz8',
     id: 2,
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
     image: '/images/ARcher/ARcher - Project Image.jpg',
     tags: ['Unity', 'AR', 'C#', 'Mobile'],
     source: '/ARcher',
-    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
     id: 4},
     {
     title: 'VR Haptic Glove - Magos',
@@ -48,7 +48,7 @@ export const projects = [
     image: '/images/VR Haptic Glove - Magos/Magos - Project Image.jpeg',
     tags: ['Unity', 'VR', 'C#', 'Humanoid'],
     source: '/HapticGloveVR',
-    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVdZnlw50DmnNaHHUWVLYQM_',
     id: 5},
     {
     title: 'Fruit Slicer VR',
@@ -56,7 +56,7 @@ export const projects = [
     image: '/images/FruitSlicer VR/FruitSlicer VR - Project Image.png',
     tags: ['Unity', 'VR', 'C#', 'Photon'],
     source: '/FruitSlicerVR',
-    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    visit: 'https://www.youtube.com/watch?v=0ph16W51JTA',
     id: 6},
     {
     title: 'Pet Endless Runner',
@@ -64,7 +64,7 @@ export const projects = [
     image: '/images/Pet Endless Runner/Pet Endless Runner - Project Image.jpg',
     tags: ['Unity', 'C#', 'WebGL'],
     source: '/PetEndlessRunner',
-    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    visit: 'https://www.youtube.com/watch?v=GcGeCE7Blo4',
     id: 7},
     {
     title: 'Superman VR',
@@ -72,7 +72,7 @@ export const projects = [
     image: '/images/Superman VR/Superman VR - Project Image.jpg',
     tags: ['Unity', 'C#', 'VR', 'Hand Tracking'],
     source: '/SupermanVR',
-    visit: 'https://www.youtube.com/playlist?list=PLDZktaCsdtVc7qyGFGxfA7N8yqFrGlApn',
+    visit: 'https://www.youtube.com/watch?v=kOAVx5cbF8Q',
     id: 8,
   },
 ];
