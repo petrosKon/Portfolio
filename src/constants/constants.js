@@ -79,8 +79,8 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2017, text: 'Diploma thesis in Unity', },
-  { year: 2018, text: 'Worked as an Android developer in Ingredio', },
-  { year: 2019, text: 'Worked as a Unity/Android developer in COMIC', },
-  { year: 2020, text: 'Worked as a Unity developer at COMIC & MAGOS', },
+  { year: 2018, text: 'Android developer in Ingredio', },
+  { year: 2019, text: 'Unity/Android developer in COMIC', },
+  { year: 2020, text: 'Unity developer at COMIC & MAGOS', },
   { year: 2021, text: 'Master & Internship in IP Paris', },
 ];
