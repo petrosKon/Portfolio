@@ -44,7 +44,7 @@ export const projects = [
     id: 4},
     {
     title: 'VR Haptic Glove - Magos',
-    description: "When I worked as a developer at Magos, my main task was to create an API inder to integrate a custom VR Haptic glove into Unity.",
+    description: "When I worked as a developer at Magos, my main task was to create an API in order to integrate a custom VR Haptic glove into Unity.",
     image: '/images/VR Haptic Glove - Magos/Magos - Project Image.jpeg',
     tags: ['Unity', 'VR', 'C#', 'Humanoid'],
     source: '/HapticGloveVR',
