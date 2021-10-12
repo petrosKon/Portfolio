@@ -5,7 +5,7 @@ export const projects = [
       image: '/images/Internship - Project Image.png',
       tags: ['Unity', 'VR', 'C#', 'Optitrack'],
     source: '/CollocatedVR',
-    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVeMaMwjg-SlbdHiLIk7Q9I6'
+    visit: 'https://youtube.com/playlist?list=PLDZktaCsdtVeMaMwjg-SlbdHiLIk7Q9I6',
     id: 0,
   },
   {
