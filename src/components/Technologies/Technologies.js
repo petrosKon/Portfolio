@@ -16,7 +16,7 @@ const Technologies = () =>  (
             <br />
             <ListContainer>
                 <ListTitle>Unity</ListTitle>
-                <ListParagraph>3 years of experience with <br/> Unity</ListParagraph>
+                <ListParagraph>3 years of experience with <br/> Unity creating AR,VR and Mobile Applications</ListParagraph>
             </ListContainer>
         </ListItem>
         <ListItem>
@@ -25,14 +25,6 @@ const Technologies = () =>  (
             <ListContainer>
                 <ListTitle>C#</ListTitle>
                 <ListParagraph>3 years of experience with <br/> C# and visual studio in Unity</ListParagraph>
-            </ListContainer>
-        </ListItem>
-        <ListItem>
-            <SiOculus size="3rem"/>
-            <br />
-            <ListContainer>
-                <ListTitle>Oculus</ListTitle>
-                <ListParagraph>7 Applications developed in both Oculus Rift & Quest</ListParagraph>
             </ListContainer>
         </ListItem>
         <ListItem>
