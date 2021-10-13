@@ -5,9 +5,9 @@ import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
   { number: 10, text: 'Projects on Both VR,AR & Mobile'},
-  { number: 1, text: 'XR4ALL award while my time at MAGOS', },
+  { number: 1, text: 'XR4ALL European award at MAGOS', },
   { number: 3, text: 'years of experience in both VR,AR & Mobile', },
-  { number: 1, text: 'Master specialized in VR/AR and Graphics', }
+  { number: 1, text: 'deployed application'}
 ];
 
 const Acomplishments = () => (

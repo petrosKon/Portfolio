@@ -31,7 +31,7 @@ const Header = () =>  (
       </Link>
     </li>
     <li>
-      <Link href="#CV">
+      <Link href="/Files/Resume-Petros-Kontrazis (1).pdf" target="_blank" download>
          <NavLink>CV</NavLink>
       </Link>
     </li>

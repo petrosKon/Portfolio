@@ -3,14 +3,15 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\SocialVR",
-    "\\public\\images\\Superman VR",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Projects",
+    "\\src\\components\\Acomplishments",
+    "\\src\\components\\Header",
+    "\\src\\components\\Technologies",
+    "\\src\\components\\TimeLine",
     "\\src\\constants",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\public\\images\\CollocatedVR",
+  "SelectedNode": "\\src\\constants\\constants.js",
   "PreviewInSolutionExplorer": false
 }

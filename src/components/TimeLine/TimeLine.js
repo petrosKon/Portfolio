@@ -48,7 +48,7 @@ const Timeline = () => {
       <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Timeline showing my career path up until now
+        My previous working experience and my current career path, up until now
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
