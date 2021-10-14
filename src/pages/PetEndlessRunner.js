@@ -3,6 +3,7 @@ import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponent
 import { GridContainer, CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import  ScrollToTop  from '../components/Scroll/ScrollToTop';
 
 
 const platformWidthCode = `				platformWidths = new float[theObjectPools.Length];
@@ -91,6 +92,7 @@ const updateHighscoreCode = `IEnumerator UploadNewHighscore(string username, int
 const PetEndlessRunner =() =>{
 	return(
 	<Layout>
+	    <ScrollToTop showBelow={250} />
 		<div>
 		<SectionTitle>Pet Endless Runner</SectionTitle>
 		<SectionDivider/>

@@ -3,10 +3,12 @@ import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponent
 import { GridContainer, CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import  ScrollToTop  from '../components/Scroll/ScrollToTop';
 
 const CollocatedVR =() =>{
 	return(
 	<Layout>
+	    <ScrollToTop showBelow={250} />
 		<div>
 		<SectionTitle>Collocated VR</SectionTitle>
 		<SectionDivider/>

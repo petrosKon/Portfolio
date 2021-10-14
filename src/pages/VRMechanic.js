@@ -4,6 +4,7 @@ import { CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
 import ReactMarkdown from 'react-markdown';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import  ScrollToTop  from '../components/Scroll/ScrollToTop';
 
 const statusCodeSnippet = 
 	`public enum Status
@@ -17,6 +18,7 @@ const statusCodeSnippet =
 const VRMechanic =()=>{
 	return(
 	<Layout>
+	    <ScrollToTop showBelow={250} />
 		<div>
 		<SectionTitle>VR Mechanic</SectionTitle>
 		<SectionDivider/>

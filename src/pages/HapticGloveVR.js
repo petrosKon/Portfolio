@@ -1,10 +1,12 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
 import { GridContainer, CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
+import  ScrollToTop  from '../components/Scroll/ScrollToTop';
 
 const HapticGloveVR =()=>{
 	return(
 	<Layout>
+	    <ScrollToTop showBelow={250} />
 		<div>
 		<SectionTitle>Magos</SectionTitle>
 		<SectionDivider/>

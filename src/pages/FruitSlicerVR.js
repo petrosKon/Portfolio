@@ -3,6 +3,7 @@ import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponent
 import { GridContainer, CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import  ScrollToTop  from '../components/Scroll/ScrollToTop';
 
 const displayBoundariesCode = `						bool configuredBoundaries = OVRManager.boundary.GetConfigured();
 
@@ -51,6 +52,7 @@ const launchDataCalculationCode = `LaunchData CalculateLaunchData()
 const FruitSlicerVR =() =>{
 	return(
 	<Layout>
+	    <ScrollToTop showBelow={250} />
 		<div>
 		<SectionTitle>FruitSlicerVR</SectionTitle>
 		<SectionDivider/>

@@ -1,10 +1,12 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
 import { CenterImage, CenterText } from '../components/Projects/ProjectsStyles';
+import  ScrollToTop  from '../components/Scroll/ScrollToTop';
 
 const SocialVR =()=>{
 	return(
 		<Layout>
+		    <ScrollToTop showBelow={250} />
 			<div>
 			<SectionTitle>Social VR</SectionTitle>
 			<SectionDivider/>

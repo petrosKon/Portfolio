@@ -6,11 +6,12 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import { ScrollToTop } from '../components/Scroll/ScrollToTop';
+import  ScrollToTop  from '../components/Scroll/ScrollToTop';
 
 const Home = () => {
   return (
     <Layout>
+    <ScrollToTop showBelow={250} />
        <Section grid> 
         <Hero />
          <BgAnimation /> 
