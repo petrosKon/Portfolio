@@ -6,9 +6,18 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 
 const Footer = () => {
   return (
-    <div>
-      Kontrazis Petros, 2021
-    </div>
+   <FooterWrapper>
+        <LinkList>
+            <LinkColumn>
+                    <LinkTitle>Call</LinkTitle>
+                    <LinkItem href="tel:+306974854462">+306974854462</LinkItem>
+            </LinkColumn>
+             <LinkColumn>
+                    <LinkTitle>Email</LinkTitle>
+                    <LinkItem href="mailto:kontrazis-petros@hotmail.com">kontrazis-petros@hotmail.com</LinkItem>
+            </LinkColumn>
+        </LinkList>
+    </FooterWrapper>
   );
 };
 
