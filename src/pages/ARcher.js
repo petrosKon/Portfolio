@@ -4,6 +4,7 @@ import { GridContainer, CenterImage, CenterText } from '../components/Projects/P
 import ReactMarkdown from 'react-markdown';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { xonokai } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import { ScrollToTop } from '../components/Scroll/ScrollToTop';
 
 const codeBlockHero = 
 	`if(!Physics.Raycast(transform.position, Vector3.down, Mathf.Infinity))
