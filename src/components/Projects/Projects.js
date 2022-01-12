@@ -6,35 +6,35 @@ import { projects } from '../../constants/constants';
 
 
 const Projects = () => (
-  <Section nopadding id="projects">
-    <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
-    <GridContainer>
-       {projects.map(({id, image, title, description, tags, source, visit}) => (
-         <BlogCard key={id}>
-          <Img src={image}  />
-            <TitleContent>
-                <HeaderThree title>{title}</HeaderThree>
-                <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
-            <div>
-                <br />
-                <TitleContent>Stack</TitleContent>
-                <TagList>
-                  {tags.map((tag, i) =>(
-                    <tag key={i}>{tag}</tag>
-                  ))}
-                </TagList>
-            </div>
-            <UtilityList>
-                <ExternalLinks href={visit}>Video</ExternalLinks>
-                <ExternalLinks href={source}>Details</ExternalLinks>
-            </UtilityList>
-         </BlogCard>
-        ))}
-    </GridContainer>
-  </Section>
+    <Section nopadding id="projects">
+        <SectionDivider />
+        <SectionTitle main>Projects</SectionTitle>
+        <GridContainer>
+            {projects.map(({ id, image, title, description, tags, source, visit }) => (
+                <BlogCard key={id}>
+                    <Img src={image} />
+                    <TitleContent>
+                        <HeaderThree title>{title}</HeaderThree>
+                        <Hr />
+                    </TitleContent>
+                    <CardInfo>{description}</CardInfo>
+                    <div>
+                        <br />
+                        <TitleContent>Stack</TitleContent>
+                        <TagList>
+                            {tags.map((tag, i) => (
+                                <tag key={i}>{tag}</tag>
+                            ))}
+                        </TagList>
+                    </div>
+                    <UtilityList>
+                        <ExternalLinks href={visit}>Video</ExternalLinks>
+                        <ExternalLinks href={source}>Details</ExternalLinks>
+                    </UtilityList>
+                </BlogCard>
+            ))}
+        </GridContainer>
+    </Section>
 );
 
 export default Projects;

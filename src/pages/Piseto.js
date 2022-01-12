@@ -1,6 +1,6 @@
 import { Layout } from '../layout/Layout';
 import { Section, SectionDivider, SectionTitle } from '../styles/GlobalComponents';
-import { GridContainer, CenterImage, CenterText, GridContainer5, GridContainer3  } from '../components/Projects/ProjectsStyles';
+import { GridContainer, CenterImage, CenterText, GridContainer5, GridContainer3 } from '../components/Projects/ProjectsStyles';
 import ScrollToTop from '../components/Scroll/ScrollToTop';
 
 
@@ -355,7 +355,7 @@ const Piseto = () => {
                 <br />
                 <br />
                 <SectionDivider />
-                <h1> Videos </h1>
+                <h1> Video </h1>
                 <br />
                 <br />
                 <div style={CenterImage}>

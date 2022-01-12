@@ -5,7 +5,7 @@ export const projects = [
         image: '/images/Piseto/Piseto - Project Image.png',
         tags: ['Unity', 'C#', 'Android', 'Java', 'Mobile'],
         source: '/Piseto',
-        visit: 'https://www.cite.gr/PISETO',
+        visit: 'https://www.youtube.com/embed/fCU5hScNa58',
         id: 0,
     },
     {
