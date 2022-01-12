@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\images",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Acomplishments",
-    "\\src\\components\\Header",
-    "\\src\\components\\Technologies",
+    "\\src\\components\\Projects",
     "\\src\\components\\TimeLine",
     "\\src\\constants",
-    "\\src\\pages"
+    "\\src\\pages",
+    "\\src\\styles",
+    "\\src\\themes",
+    "\\src\\Utils"
   ],
-  "SelectedNode": "\\src\\constants\\constants.js",
+  "SelectedNode": "\\src\\pages\\Piseto.js",
   "PreviewInSolutionExplorer": false
 }
