@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Projects",
-    "\\src\\components\\TimeLine",
+    "\\src\\components\\Hero",
+    "\\src\\components\\NavDropDown",
     "\\src\\constants",
     "\\src\\pages",
     "\\src\\styles",
     "\\src\\themes",
     "\\src\\Utils"
   ],
-  "SelectedNode": "\\src\\pages\\Piseto.js",
+  "SelectedNode": "\\src\\components\\Hero\\Hero.js",
   "PreviewInSolutionExplorer": false
 }

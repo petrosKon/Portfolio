@@ -10,7 +10,7 @@ const CollocatedVR =() =>{
 	<Layout>
 	    <ScrollToTop showBelow={250} />
 		<div>
-		<SectionTitle>Collocated VR</SectionTitle>
+		<SectionTitle>Room Scale Metaverse</SectionTitle>
 		<SectionDivider/>
 		<h1>Motivation</h1>
 		<CenterText>

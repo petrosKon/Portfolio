@@ -13,7 +13,7 @@ const Hero = () => (
          I Am Petros Kontrazis
        </SectionTitle>
        <SectionText>
-       I am a Unity and Android developer with over 3 years of experience. I now mainly work with VR and AR and this site is for showcasing my current work. 
+       I am a <b>XR</b>/<b>Android</b> Engineer with over 3 years of experience. I now mainly work with VR and AR and this site is for showcasing my current work. 
        </SectionText>
        <Button onClick={() => window.location = '../#about'}>Learn More</Button>
     </LeftSection>
